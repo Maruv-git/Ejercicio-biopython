@@ -1,6 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-import Bio
-print(Bio.__version__)
-summarize_contents()
+git clone https://github.com/Maruv-git/Ejercicio-de-Biopython
  
