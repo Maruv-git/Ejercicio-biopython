@@ -1,3 +1,4 @@
 # Ejercicio-de-Biopython
 Ejercicio de biopython.práctica
-En el archivo .py hay una función llamada sumarize contents. Las funciones sirve para este caso en Biopython, para introducir información que contendrá un nombre, locación código, etcétera. 
+En el archivo .py hay una función llamada "Sumarize Contents". 
+Esta función está en formato "genbank" y esta imprime un resumen del contenido del archivo
