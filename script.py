@@ -3,25 +3,31 @@ from Bio.SeqRecord import SeqRecord
 import os
 
 # Cambiar la dirección del archivo .gbk que desee leer
-filename =  "/mnt/c/Users/MUDTL/Docuemnts/git/Ejercicio-biopython/ls_orchid.gbk"
+filename =  "/mnt/c/Users/MUDTL/Docuemnts/GitHub/Ejercicio-biopython/ls_orchid.gbk"
 
 def summarize_contents(filename):
-	ListaR = []
-	ListaR = os.path.split(filename)
-	Cadena = " "
-	Cadena = ("file: "+ ListaR[1] + "\npath: " + ListaR[0])
-	# Número de registros
-	all_records=[]
-	records = list(SeqIO.parse(filename, "genbank"))
-	Cadena += ("\nnum_records: " + str(len(records)))
-	Cadena += ("\nrecords:")
-	# Registros
-	for seq_record in SeqIO.parse(filename, "genbank"):
-		all_records.append(seq_record.name)
-		Cadena += ("\n- id:" + str(seq_record.id))
-		Cadena += ("\nname: " + seq_record.name)
-		Cadena += ("\ndescription: " + str(seq_record.description))
-		Cadena += ("\n")
-	return Cadena
-R = summarize_contents(filename)
-print(R)
+	lta = []
+	lta = os.path.split(filename)
+	cadena = " "
+	cadena = ("\nfile: "+ lta[1] + "\npath: " + lta[0])
+	File_Extension = []
+	File_Extension = os.path.splitext(filename)
+//////////////////////////////////////////////////////////////////////////////////	
+	if(File_Extension[1]==".gbk"):
+		type_file="GenBank"
+	else:
+		type_file="Fasta"
+		pass
+	rgstro = list(SeqIO.parse(filename, type_file))
+	cadena += ("\nnum_rgstro: " + str(len(rgstro)))
+	cadena += ("\nrecord(s): ")
+///////////////////////////////////////////////////////////////////////////////////	
+	for seq_record in SeqIO.parse(filename, type_file):
+		cadena += ("\n-ID: " + str(seq_record.id))
+		cadena += ("\nName: " + seq_record.name)
+		cadena += ("\nDescription: " + str(seq_record.description))
+	return cadena
+///////////////////////////////////////////////////////////////////////////////////
+if __name__=="__main__":
+	R = summarize_contents(filename)
+	print(R)
