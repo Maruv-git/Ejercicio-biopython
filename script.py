@@ -1,4 +1,5 @@
 ffrom Bio import SeqIO
+from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 import os
 
@@ -31,3 +32,11 @@ def summarize_contents(filename):
 if __name__=="__main__":
 	R = summarize_contents(filename)
 	print(R)
+///////////////////////////////////////////////////////////////////////////////////////
+
+def concatenate_get_reverse_of_complement(s1,s2)
+	scon = Seq(s1 + s2)
+	return scon.reverse_complement()
+creversa = concatenaate_get_reverse_of_complement(sec1, sec2)
+if __name__ == "__main__":
+	print (creversa)
