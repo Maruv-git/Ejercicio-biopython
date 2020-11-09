@@ -3,6 +3,7 @@ import script
 
 class prueba(unittest.TestCase):
   def test_summarize_contents(self):
+    
 
       s = summarize_contents("data/AF323668.gbk")
       self.assertEqual("file: AF323668.gbk\npath: C:\Users\MUDTL\Documents\GitHub\Ejercicio-biopython\data\AF323668.gbk")
