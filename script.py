@@ -30,7 +30,7 @@ def summarize_contents(filename):
 		if __name__ == "__main__":
 			R = summarize_contents(filename)
 			print(R)
-
+#SEGUNDO EJERCICIO////////////////////////////////////////////////////////////
 
 def concatenate_get_reverse_of_complement(s1,s2):
 		scon = Seq(s1 + s2)
