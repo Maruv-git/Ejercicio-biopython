@@ -21,3 +21,7 @@ class prueba(unittest.TestCase):
       
       s = summarize_contents("data/opuntia.fasta")
       self.assertEqual("file: opuntia.fasta\npath: C:\Users\MUDTL\Documents\GitHub\Ejercicio-biopython\data\opuntia.fasta" )
+
+
+
+
