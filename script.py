@@ -30,7 +30,7 @@ def summarize_contents(filename):
 		if __name__ == "__main__":
 			R = summarize_contents(filename)
 			print(R)
-#SEGUNDO EJERCICIO////////////////////////////////////////////////////////////
+#TERCER EJERCICIO////////////////////////////////////////////////////////////
 
 def concatenate_get_reverse_of_complement(s1,s2):
 		scon = Seq(s1 + s2)
@@ -38,5 +38,17 @@ def concatenate_get_reverse_of_complement(s1,s2):
 		creversa = concatenaate_and_get_reverse_of_complement(sec1, sec2)
 		if __name__ == "__main__":
 			print (creversa)
+			
+#CUARTO EJERCICO/////////////////////////////////////////////////////////////////
+def extract sequences
+	param = list.(SeqIO.parse(archivo, "fasta"))
+	for i, in enumerate param:
+		arch = open(f"secuenca_fasta/{i}.fasta", "w")
+		arch.write(f">{record.id}\n")
+		arch.write(f">{record.seq}\n")
+		arch.close()
+	print(f"secuencia_numero_{i}.fasta")
+extract_sequences(archivo)
+
 
 
