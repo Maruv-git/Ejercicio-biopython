@@ -48,3 +48,15 @@ class prueban2(unittest.TestCase):
       self.assertEqual(Ej5,Cadrev)
 
 
+      
+      
+#prueba de extract.sequences///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class preubaext_sec(unittest.TestCase):
+  def test_extract_sequences(self):
+    archivo = "C:\Users\MUDTL\Downloads\sequences.fasta"
+    c = Scrpt.extract_sequences(archivo)
+    self.assertEqual(c)
+    
+if__name__ == "__main__":
+  unittest.main()
