@@ -40,7 +40,7 @@ def concatenate_get_reverse_of_complement(s1,s2):
 			print (creversa)
 			
 #CUARTO EJERCICO/////////////////////////////////////////////////////////////////
-def extract sequences
+def extract_sequences
 	param = list.(SeqIO.parse(archivo, "fasta"))
 	for i, in enumerate param:
 		arch = open(f"secuenca_fasta/{i}.fasta", "w")
@@ -50,5 +50,8 @@ def extract sequences
 	print(f"secuencia_numero_{i}.fasta")
 extract_sequences(archivo)
 
+#CUARTA TAREA EJERCICIO 4/////////////////////////////////////////////////////////////
+def extract_sequences_revcomp
+	
 
 
